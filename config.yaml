@@ -20,16 +20,16 @@ params:
 
     sidebar:
         compact: false
-        emoji:
-        subtitle:
+        emoji: 🤗
+        subtitle: Simplicity is the ultimate sophistication.
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/sloth_icon.jpg
 
     article:
         headingAnchor: false
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
@@ -118,8 +118,16 @@ params:
             id:
 
     widgets:
-        homepage: []
-        page: []
+        homepage: 
+            - type: "search"
+            - type: "archives"
+              params:
+                limit: 5
+            - type: "categories"
+              params:
+                    limit: 10
+        page:
+            - type: "toc"
 
     opengraph:
         twitter:
@@ -147,3 +155,21 @@ params:
             enabled: true
         content:
             enabled: true
+
+# Custom menu configurations
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: 1
+          params:
+            icon: home
+            newTab: false
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/louishhy
+          params:
+            icon: brand-github
+            newTab: true
