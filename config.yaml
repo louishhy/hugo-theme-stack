@@ -8,7 +8,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: favicon.ico
 
     footer:
         since:
@@ -20,7 +20,7 @@ params:
 
     sidebar:
         compact: false
-        emoji: 🤗
+        emoji: 🐳
         subtitle: Simplicity is the ultimate sophistication.
         avatar:
             enabled: true
@@ -33,7 +33,7 @@ params:
         toc: true
         readingTime: true
         license:
-            enabled: false
+            enabled: true
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
